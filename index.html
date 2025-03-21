@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/infobox.css">
     <link rel="stylesheet" href="./css/portals.css">
+    <script src="./js/table.js"></script> 
 </head>
 <body>
 <!-- Navbar -->
@@ -80,29 +81,35 @@
 
             <!-- Table -->
             <h2>Key Statistics</h2>
-            <table class="stats-table">
+            <table class="stats-table sortable">
+                <caption>List of Cities</caption>
                 <thead>
                     <tr>
-                        <th>Category</th>
-                        <th>Value</th>
+                        <th scope="col">Name</th>
+                        <th scope="col" data-sortable="true">Population</th>
+                        <th scope="col" data-sortable="true">Land Area (sq mi)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Population</td>
-                        <td>12,345,678</td>
+                        <th scope="row">Eriksburg</th>
+                        <td>1,028,283</td>
+                        <td>293.34</td>
                     </tr>
                     <tr>
-                        <td>Area</td>
-                        <td>567,890 km²</td>
+                        <th scope="row">Springfield</th>
+                        <td>208,384</td>
+                        <td>54.43</td>
                     </tr>
                     <tr>
-                        <td>GDP</td>
-                        <td>$1.23 trillion</td>
+                        <th scope="row">Virestrom</th>
+                        <td>132,485</td>
+                        <td>49.56</td>
                     </tr>
                     <tr>
-                        <td>Capital</td>
-                        <td>Datapolis</td>
+                        <th scope="row">Hardwell</th>
+                        <td>87,456</td>
+                        <td>33.53</td>
                     </tr>
                 </tbody>
             </table>
