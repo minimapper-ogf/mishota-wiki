@@ -1,0 +1,66 @@
+/* Portal (Navbox) */
+.portal {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portal h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.portal-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.portal-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.portal-row strong {
+    font-weight: bold;
+    color: #0645ad;
+    margin-right: 10px;
+}
+
+.portal-row ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.portal-row ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.portal-row ul li:not(:last-child)::after {
+    content: "|";
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.portal-row ul li a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+.portal-row ul li a:hover {
+    text-decoration: underline;
+}

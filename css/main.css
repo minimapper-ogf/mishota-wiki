@@ -1,34 +1,112 @@
-/* Basic CSS setup for mishota-wiki */
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #444;
-}
-
-a {
-    color: #007acc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p {
     line-height: 1.6;
-    margin: 0 0 1em;
+    color: #222;
+    background-color: #fff;
 }
 
-.container {
-    width: 90%;
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 5px;
+    margin: 20px 0; /* Align to the left */
+    max-width: 320px; /* Adjust width for a sidebar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    position: fixed; /* Keep it in place */
+    left: 10px; /* Adjust distance from the left */
+    height: 2000px;
+    top: 20px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #0645ad;
+    font-weight: bold;
+    padding: 8px 16px; /* Padding for clickable area */
+    border-radius: 20px; /* Slightly rounded links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0645ad; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Content */
+.content {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* Tables */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stats-table th, .stats-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.stats-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.stats-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Chart Placeholder */
+.chart {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
 }
