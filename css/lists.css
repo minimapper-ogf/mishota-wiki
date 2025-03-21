@@ -1,48 +1,46 @@
-/* Category Sections */
-.category-section {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.category-section:last-child {
-    border-bottom: none; /* Remove border for the last section */
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.category-section h2 {
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 15px;
-    color: #0645ad;
-    border-bottom: 2px solid #0645ad;
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    flex: 1 1 calc(50% - 20px); /* Two columns */
+    min-width: 300px;
+}
+
+.category h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
-.category-section ul {
-    list-style: none;
+.category ul {
+    list-style-type: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
 }
 
-.category-section ul li {
-    flex: 1 1 200px; /* Flexible width, minimum 200px */
+.category ul li {
+    margin: 5px 0;
 }
 
-.category-section ul li a {
+.category ul li a {
     text-decoration: none;
-    color: #0645ad;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #0077cc;
 }
 
-.category-section ul li a:hover {
-    background-color: #0645ad;
-    color: #fff;
+.category ul li a:hover {
+    text-decoration: underline;
 }
